@@ -15,20 +15,18 @@ Use the right half of the Trento image as the source domain dataset, and move th
 An example dataset folder has the following structure:
 ```
 datasets
-├── imdb_128.pickle
-├── Trento
-│   ├── hsi-right.mat
-│   ├── hsi-left.mat
-│   ├── lidar-right.mat
-│   ├── lidar-left.mat
-│   ├── gt-right.mat
-|   ├── gt-left.mat
+├── Houston2013
+│   ├── Huston2013_HSI.pickle
+│   ├── Huston2013_LiDAR.pickle
+│   ├── HSI.mat
+│   ├── git.mat
+│   ├── LiDAR.mat
 
 ```
 
 ## Usage:
-Take HiF2-FSLF method on the Trento dataset as an example: 
-1. Download the required data set and move to folder`./datasets`.
-2. If you down the source domain data set (Trwnto-RightPart) in mat format,you need to run the script `imdb_128.py` to generate preprocessed source domain data. 
-3. Taking 5 labeled samples per class as an example, run `main-Trento.py`. 
+Take HiF2-FSLF method on the Houston2013 dataset as an example: 
+1. Download the required data set and move to folder `./datasets`.
+2. If you down the source domain data set in mat format, you need to run the script `imdb_128.py` to generate preprocessed source domain data. 
+3. Taking 5 labeled samples per class as an example, run `train_INN_houston2013`. 
 
